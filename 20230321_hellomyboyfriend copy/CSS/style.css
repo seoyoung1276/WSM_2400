@@ -1,0 +1,46 @@
+body{
+    background-color: antiquewhite;
+}
+h1, h2{
+    background-color: plum;
+}
+h1 ~ h2{
+    background-color: plum;
+}
+li{
+    color: #333;
+    font-size: 32px;
+}
+ul{
+    color: #333;
+    font-size: 32px;
+   
+}
+.krmem {
+    color: skyblue;
+}
+.jpmem {
+    color: crimson;
+}
+.inchan{
+    color: darkblue;
+}
+.leader{
+    color: purple;
+}
+li:nth-child(odd){
+    background-color: #eee;
+}
+li:nth-child(5n){
+    background-color: #aaa;
+}
+h5 ~ h6 {
+    color: #333;
+    font-size: 32px;
+}
+[attribute="text"] {
+    background-color: aqua;
+}
+ul {
+    list-style-type: overline;
+}

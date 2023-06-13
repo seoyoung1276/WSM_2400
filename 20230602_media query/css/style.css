@@ -1,0 +1,19 @@
+/* desktop */
+body{
+    background-color: darkseagreen;
+}
+
+/* tablet */
+@media screen and (max-width: 720px) {
+    body {
+        background-color: magenta;
+    }
+}
+
+/* mobile */
+/* 괄호 빼면 색 안 바뀜 이거 시험문제 나옴! */
+@media screen and (max-width: 540px) {
+    body {
+        background-color: pink;
+    }
+}
