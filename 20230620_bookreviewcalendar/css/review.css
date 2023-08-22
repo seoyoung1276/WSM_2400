@@ -11,15 +11,33 @@ main{
 .image-info-groups{
     /* flex-wrap: wrap; 태블릿 너비일때 info-groups 전체가 먼저 wrap 되어버려서 주석 처리*/
 }
-.info-group {
-    flex-wrap: wrap;
-    margin: 0 40 px;
-    gap: 40px
+
+.book-image{
+    width: 200px;
+    min-width: 200px;
 }
+.book-image > img {
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 16px 32px #aaa;
+    transition: all 0.4s;
+}
+.book-image > img:hover {
+    transfrom: perspective(400px) rotateY(20deg)
+}
+
 
 .info-groups {
     flex-direction: column;
+    margin: 0 40px;
     gap: 40px;
+    min-width: 200px; /* ... */
+}
+
+.info-group {
+    flex-wrap: wrap;
+    gap: 40px
+    /* overflow: hidden; /*...*/
 }
 
 .info {
@@ -28,19 +46,31 @@ main{
 .title,
 .author,
 .publisher,
-.read-date
+.read-date,
 .synopsis,
 .phrase{
     font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .label{
     /*폰트 컬러는 font-color 아님*/
-    color: ;
+    color: #999;
+}
+
+.synopsis > input,
+.phrase > input {
+    width: 100%;
+    height: 2rem;
 }
 
 .reviews {
     flex-direction: column;
+    margin: 40px 0;
+    gap: 40px;
 }
+
 .review {
     flex-direction: column;
 }
@@ -65,16 +95,3 @@ main{
 /* main div {
     border: 2px solid black;
 } */
-.book-image{
-    width: 200px;
-    height: 400px;
-}
-.book-image > img{
-    display: block; /* 이미지에 약간 너비 생기는 문제 해결*/
-}
-.info{
-    height: 100px;
-}
-.review{
-    height: 100px;
-}
