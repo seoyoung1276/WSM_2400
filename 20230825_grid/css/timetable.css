@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    /*col: 6개, row: 8개 */
+    grid-template-columns: repeat(6,1fr);
+}
+
+.item{
+    display: flex;
+    border: 2px solid black;
+    padding: 10px;
+    justify-content: center;
+}
+
+.weekday{
+    background-color: #9DD84B;
+}
