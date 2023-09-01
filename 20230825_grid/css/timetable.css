@@ -4,10 +4,13 @@
 }
 
 .container{
+    height: 100%;
+    width: 100%;
     display: grid;
     /*col: 6개, row: 8개 */
     grid-template-columns: repeat(6,1fr);
 }
+
 
 .item{
     display: flex;
