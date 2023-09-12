@@ -33,7 +33,20 @@ main{
     place-items: center;
 }
 
+/* 오늘에 맞는 요일로 이동하자 */
+.date.item:nth-child(1){
+    grid-column-start: 6;
+}
 
+/* 토요일을 파란색으로 */
+.date.item:nth-child(7n+2){
+    color:blue;
+}
+
+/* 일요일을 빨간색으로 */
+.date.item:nth-child(7n+3){
+    color:red;
+}
 
 .review.flex-container{
     display: flex;
